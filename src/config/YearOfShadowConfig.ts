@@ -1,6 +1,7 @@
 import { AlignmentType, Boss, FinalBoss, Level, LevelData } from "../components/level/LevelData";
+import { IShadowConfig } from "./IShadowConfig";
 
-export class YearOfShadowConfig {
+export class YearOfShadowConfig implements IShadowConfig {
     public levelData: LevelData = {
         stages: [
             {
@@ -24,7 +25,7 @@ export class YearOfShadowConfig {
                 stage: Level.DIGITAL_CIRCUIT,
                 objectives: [
                     {
-                        alignment: AlignmentType.NEUTRAL,
+                        alignment: AlignmentType.DARK,
                         stage: Level.CRYPTIC_CASTLE,
                     },
                     {
@@ -58,7 +59,7 @@ export class YearOfShadowConfig {
                         stage: Level.PRISON_ISLAND,
                     },
                     {
-                        alignment: AlignmentType.NEUTRAL,
+                        alignment: AlignmentType.HERO,
                         stage: Level.CIRCUS_PARK,
                     },
                 ],
@@ -121,7 +122,7 @@ export class YearOfShadowConfig {
                 stage: Level.CENTRAL_CITY,
                 objectives: [
                     {
-                        alignment: AlignmentType.NEUTRAL,
+                        alignment: AlignmentType.DARK,
                         stage: Level.ARK,
                     },
                     {
@@ -196,7 +197,7 @@ export class YearOfShadowConfig {
                         boss: Boss.BLACK_BULL,
                     },
                     {
-                        alignment: AlignmentType.NEUTRAL,
+                        alignment: AlignmentType.HERO,
                         stage: Level.LOST_IMPACT,
                         boss: Boss.BLACK_BULL,
                     },
@@ -206,12 +207,12 @@ export class YearOfShadowConfig {
                 stage: Level.ARK,
                 objectives: [
                     {
-                        alignment: AlignmentType.NEUTRAL,
+                        alignment: AlignmentType.DARK,
                         stage: Level.GUN_FORTRESS,
                         boss: Boss.BLUE_FALCON,
                     },
                     {
-                        alignment: AlignmentType.HERO,
+                        alignment: AlignmentType.NEUTRAL,
                         stage: Level.BLACK_COMET,
                         boss: Boss.BLUE_FALCON,
                     },
@@ -275,11 +276,11 @@ export class YearOfShadowConfig {
                 stage: Level.LOST_IMPACT,
                 objectives: [
                     {
-                        alignment: AlignmentType.DARK,
+                        alignment: AlignmentType.NEUTRAL,
                         stage: Level.COSMIC_FALL,
                     },
                     {
-                        alignment: AlignmentType.NEUTRAL,
+                        alignment: AlignmentType.HERO,
                         stage: Level.FINAL_HAUNT,
                     },
                 ],
@@ -359,7 +360,7 @@ export class YearOfShadowConfig {
             {
                 route: 2,
                 name: "Prologue to World Conquest",
-                path: "DDDDHH",
+                path: "DDDDDH",
             },
             {
                 route: 3,
@@ -367,32 +368,32 @@ export class YearOfShadowConfig {
                 path: "DDDDND",
             },
             {
-                route: 3,
+                route: 4,
                 name: "The Ultimate Ego",
                 path: "DDDDNH",
             },
             {
-                route: 3,
+                route: 5,
                 name: "Purification via Ruination",
                 path: "DDDHDD",
             },
             {
-                route: 3,
+                route: 6,
                 name: "Apogee of Darkness",
                 path: "DDDHDH",
             },
             {
-                route: 3,
+                route: 7,
                 name: "True Soldier of Destruction",
                 path: "DDDHND",
             },
             {
-                route: 3,
+                route: 8,
                 name: "Believe in Yourself",
                 path: "DDDHNH",
             },
             {
-                route: 3,
+                route: 9,
                 name: "An Android’s Determination",
                 path: "DDDHHD",
             },
@@ -1983,4 +1984,7 @@ export class YearOfShadowConfig {
             },
         ],
     };
+    public completedLevels: number[] = [
+        270,
+    ];
 }
