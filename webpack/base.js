@@ -2,37 +2,39 @@ const webpack = require('webpack');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const localDirectory = path.resolve(__dirname, '..');
+
 module.exports = {
-    entry: path.resolve(__dirname, '..', 'src', 'game.ts'),
+    entry: path.resolve(localDirectory, 'src', 'game.ts'),
     output: {
-        path: path.resolve(__dirname, '..', 'dist'),
-        filename: 'bundle.js'
+        path: path.resolve(localDirectory, 'dist'),
+        filename: '[name].js'
     },
     module: {
         rules: [{
-                test: /\.ts$/,
-                include: path.resolve(__dirname, '..', 'src'),
-                loader: 'ts-loader'
-            },
-            {
-                test: [/\.vert$/, /\.frag$/],
-                use: 'raw-loader',
-            },
-            {
-                test: /\.(gif|png|jpe?g|svg|xml)$/i,
-                include: path.resolve(__dirname, '..', 'assets', 'export'),
-                use: 'file-loader',
-            },
-            {
-                test: require.resolve('Phaser'),
-                loader: 'expose-loader',
-                options: { exposes: { globalName: 'Phaser', override: true, }, },
-            },
-            {
-                test: require.resolve('Phaser'),
-                loader: 'expose-loader',
-                options: { exposes: { globalName: 'Phaser', override: true, }, },
-            },
+            test: /\.ts$/,
+            include: path.resolve(localDirectory, 'src'),
+            loader: 'ts-loader'
+        },
+        {
+            test: [/\.vert$/, /\.frag$/],
+            use: 'raw-loader',
+        },
+        {
+            test: /\.(gif|png|jpe?g|svg|xml)$/i,
+            include: path.resolve(localDirectory, 'assets', 'export'),
+            use: 'file-loader',
+        },
+        {
+            test: require.resolve('Phaser'),
+            loader: 'expose-loader',
+            options: { exposes: { globalName: 'Phaser', override: true, }, },
+        },
+        {
+            test: require.resolve('Phaser'),
+            loader: 'expose-loader',
+            options: { exposes: { globalName: 'Phaser', override: true, }, },
+        },
         ],
     },
     plugins: [

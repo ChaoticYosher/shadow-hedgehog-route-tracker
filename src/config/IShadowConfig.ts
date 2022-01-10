@@ -1,6 +1,7 @@
 import { LevelData } from "../components/level/LevelData";
+import { RouteConfig } from "../components/route/RouteConfig";
 
 export interface IShadowConfig {
-    levelData: LevelData;
-    completedLevels: number[];
+    route: RouteConfig;
+
 }

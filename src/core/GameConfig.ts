@@ -1,4 +1,4 @@
-import { GameScene } from "./GameScene";
+import { MainScene } from "./MainScene";
 
 export const GameConfig: Phaser.Types.Core.GameConfig = {
     width: 1280,
@@ -10,8 +10,9 @@ export const GameConfig: Phaser.Types.Core.GameConfig = {
         default: 'arcade',
         arcade: {
             gravity: { y: 0, },
-            debug: false,
+            debug: true,
         },
     },
-    scene: [GameScene]
+    transparent: true,
+    scene: [MainScene]
 }

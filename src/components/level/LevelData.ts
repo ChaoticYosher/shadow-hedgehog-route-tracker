@@ -1,26 +1,26 @@
 export enum Level {
     WESTOPOLIS = 'Westopolis',
-    DIGITAL_CIRCUIT = 'DigitalCircuit',
-    GLYPHIC_CANYON = 'GlyphicCanyon',
-    LETHAL_HIGHWAY = 'LethalHighway',
-    CRYPTIC_CASTLE = 'CrypticCastle',
-    PRISON_ISLAND = 'PrisonIsland',
-    CIRCUS_PARK = 'CircusPark',
-    CENTRAL_CITY = 'CentralCity',
-    DOOM = 'TheDoom',
-    SKY_TROOPS = 'SkyTroops',
-    MAD_MATRIX = 'MadMatrix',
-    DEATH_RUINS = 'DeathRuins',
-    ARK = 'TheArk',
-    AIR_FLEET = 'AirFleet',
-    IRON_JUNGLE = 'IronJungle',
-    SPACE_GADGET = 'SpaceGadget',
-    LOST_IMPACT = 'LostImpact',
-    GUN_FORTRESS = 'GunFortress',
-    BLACK_COMET = 'BlackComet',
-    LAVA_SHELTER = 'LavaShelter',
-    COSMIC_FALL = 'CosmicFall',
-    FINAL_HAUNT = 'FinalHaunt',
+    DIGITAL_CIRCUIT = 'Digital Circuit',
+    GLYPHIC_CANYON = 'Glyphic Canyon',
+    LETHAL_HIGHWAY = 'Lethal Highway',
+    CRYPTIC_CASTLE = 'Cryptic Castle',
+    PRISON_ISLAND = 'Prison Island',
+    CIRCUS_PARK = 'Circus Park',
+    CENTRAL_CITY = 'Central City',
+    DOOM = 'The Doom',
+    SKY_TROOPS = 'Sky Troops',
+    MAD_MATRIX = 'Mad Matrix',
+    DEATH_RUINS = 'Death Ruins',
+    ARK = 'The Ark',
+    AIR_FLEET = 'Air Fleet',
+    IRON_JUNGLE = 'Iron Jungle',
+    SPACE_GADGET = 'Space Gadget',
+    LOST_IMPACT = 'Lost Impact',
+    GUN_FORTRESS = 'Gun Fortress',
+    BLACK_COMET = 'Black Comet',
+    LAVA_SHELTER = 'Lava Shelter',
+    COSMIC_FALL = 'Cosmic Fall',
+    FINAL_HAUNT = 'Final Haunt',
 }
 
 export enum AlignmentType {
@@ -29,23 +29,23 @@ export enum AlignmentType {
     DARK = 'D',
 }
 
-export enum ObjectiveMascot {
-    SONIC = 'Sonic',
-    GOAL = 'GoalRing',
-    DOOM_EYE = 'DoomEye',
-}
+// export enum ObjectiveMascot {
+//     SONIC = 'Sonic',
+//     GOAL = 'GoalRing',
+//     DOOM_EYE = 'DoomEye',
+// }
 
 export enum Boss {
-    BLACK_BULL = 'BlackBull',
-    EGG_BREAKER = 'EggBreaker',
-    HEAVY_DOG = 'HeavyDog',
-    BLUE_FALCON = 'BlueFalcon',
+    BLACK_BULL = 'Black Bull',
+    EGG_BREAKER = 'Egg Breaker',
+    HEAVY_DOG = 'Heavy Dog',
+    BLUE_FALCON = 'Blue Falcon',
 }
 
 export enum FinalBoss {
-    SONIC_DIABLO = 'SonicAndDiablo',
-    BLACK_DOOM = 'BlackDoom',
-    EGG_DEALER = 'EggDealer',
+    SONIC_DIABLO = 'Sonic And Diablo',
+    BLACK_DOOM = 'Black Doom',
+    EGG_DEALER = 'Egg Dealer',
 }
 
 export interface LevelRouteData {
@@ -56,6 +56,7 @@ export interface LevelRouteData {
 
 export interface LevelObjectiveData {
     alignment: AlignmentType;
+    task?: string;
     stage?: string;
     boss?: string;
 }
@@ -68,4 +69,18 @@ export interface LevelStageData {
 export interface LevelData {
     routes: LevelRouteData[];
     stages: LevelStageData[];
+    // stage images
+    // objective images
+}
+
+export enum Color {
+    Hero = '#0000ff',
+    Dark = '#ff0000',
+    Neutral = '#ffff00',
+}
+
+export interface StageInfoData {
+    color: Color;
+    stage: string;
+    objective: string;
 }
