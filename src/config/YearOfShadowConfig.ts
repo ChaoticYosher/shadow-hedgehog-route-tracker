@@ -1,5 +1,10 @@
-import { AlignmentType, Boss, Color, FinalBoss, Level, LevelData } from "../components/level/LevelData";
+import { BingoView } from "../components/bingo/BingoView";
+import { BingoViewConfig } from "../components/bingo/BingoViewConfig";
+import { AlignmentType, Boss, FinalBoss, Level, LevelData } from "../components/level/LevelData";
+import { ListView } from "../components/list/ListView";
+import { ListViewConfig } from "../components/list/ListViewConfig";
 import { RouteConfig } from "../components/route/RouteConfig";
+import { RouteMinimap } from "../components/route/RouteMinimap";
 import { RouteView } from "../components/route/RouteView";
 import { GameRectangle } from "../core/components/GameRectangle";
 import { GameText } from "../core/components/GameText";
@@ -8,6 +13,10 @@ import { IShadowConfig } from "./IShadowConfig";
 
 export enum Views {
     ROUTE = 'viewRoute',
+    BINGO = 'viewBingo',
+    BINGO_PREVIEW = 'viewBingoPreview',
+    SUMMARY_LIST = 'viewSummaryList',
+    WEEKLY_LIST = 'viewWeeklyList',
 }
 
 export class YearOfShadowConfig implements IShadowConfig {
@@ -19,6 +28,8 @@ export class YearOfShadowConfig implements IShadowConfig {
             stages: [
                 {
                     stage: Level.WESTOPOLIS,
+                    sequence: 1,
+                    alignmentOffset: 0,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -39,6 +50,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.DIGITAL_CIRCUIT,
+                    sequence: 2,
+                    alignmentOffset: -1,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -54,6 +67,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.GLYPHIC_CANYON,
+                    sequence: 2,
+                    alignmentOffset: 0,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -74,21 +89,27 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.LETHAL_HIGHWAY,
+                    sequence: 2,
+                    alignmentOffset: 1,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
                             stage: Level.PRISON_ISLAND,
+                            boss: Boss.BLACK_BULL,
                             task: "Escape From The City",
                         },
                         {
                             alignment: AlignmentType.HERO,
                             stage: Level.CIRCUS_PARK,
+                            boss: Boss.BLACK_BULL,
                             task: "Destroy Alien Tank",
                         },
                     ],
                 },
                 {
                     stage: Level.CRYPTIC_CASTLE,
+                    sequence: 3,
+                    alignmentOffset: -1,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -112,6 +133,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.PRISON_ISLAND,
+                    sequence: 3,
+                    alignmentOffset: 0,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -132,6 +155,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.CIRCUS_PARK,
+                    sequence: 3,
+                    alignmentOffset: 1,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -152,6 +177,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.CENTRAL_CITY,
+                    sequence: 4,
+                    alignmentOffset: -2,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -167,6 +194,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.DOOM,
+                    sequence: 4,
+                    alignmentOffset: -1,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -190,6 +219,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.SKY_TROOPS,
+                    sequence: 4,
+                    alignmentOffset: 0,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -210,6 +241,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.MAD_MATRIX,
+                    sequence: 4,
+                    alignmentOffset: 1,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -233,6 +266,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.DEATH_RUINS,
+                    sequence: 4,
+                    alignmentOffset: 2,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -250,6 +285,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.ARK,
+                    sequence: 5,
+                    alignmentOffset: -2,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -267,6 +304,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.AIR_FLEET,
+                    sequence: 5,
+                    alignmentOffset: -1,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -287,6 +326,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.IRON_JUNGLE,
+                    sequence: 5,
+                    alignmentOffset: 0,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -310,6 +351,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.SPACE_GADGET,
+                    sequence: 5,
+                    alignmentOffset: 1,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -330,6 +373,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.LOST_IMPACT,
+                    sequence: 5,
+                    alignmentOffset: 2,
                     objectives: [
                         {
                             alignment: AlignmentType.NEUTRAL,
@@ -345,6 +390,8 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
                 {
                     stage: Level.GUN_FORTRESS,
+                    sequence: 6,
+                    alignmentOffset: -2,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -353,12 +400,14 @@ export class YearOfShadowConfig implements IShadowConfig {
                         },
                         {
                             alignment: AlignmentType.HERO,
-                            stage: FinalBoss.BLACK_DOOM,
+                            boss: FinalBoss.BLACK_DOOM,
                             task: "Find Chaos Emerald",
                         },
                     ],
                 },
                 {
+                    sequence: 6,
+                    alignmentOffset: -1,
                     stage: Level.BLACK_COMET,
                     objectives: [
                         {
@@ -368,13 +417,15 @@ export class YearOfShadowConfig implements IShadowConfig {
                         },
                         {
                             alignment: AlignmentType.HERO,
-                            stage: FinalBoss.EGG_DEALER,
+                            boss: FinalBoss.EGG_DEALER,
                             task: "Find Black Comet's Center",
                         },
                     ],
                 },
                 {
                     stage: Level.LAVA_SHELTER,
+                    sequence: 6,
+                    alignmentOffset: 0,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -383,13 +434,15 @@ export class YearOfShadowConfig implements IShadowConfig {
                         },
                         {
                             alignment: AlignmentType.HERO,
-                            stage: FinalBoss.EGG_DEALER,
+                            boss: FinalBoss.EGG_DEALER,
                             task: "Find Base Center",
                         },
                     ],
                 },
                 {
                     stage: Level.COSMIC_FALL,
+                    sequence: 6,
+                    alignmentOffset: 1,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -398,13 +451,15 @@ export class YearOfShadowConfig implements IShadowConfig {
                         },
                         {
                             alignment: AlignmentType.HERO,
-                            stage: FinalBoss.BLACK_DOOM,
-                            task: "Find Computer",
+                            boss: FinalBoss.BLACK_DOOM,
+                            task: "Find Computer Room",
                         },
                     ],
                 },
                 {
                     stage: Level.FINAL_HAUNT,
+                    sequence: 6,
+                    alignmentOffset: 2,
                     objectives: [
                         {
                             alignment: AlignmentType.DARK,
@@ -413,7 +468,7 @@ export class YearOfShadowConfig implements IShadowConfig {
                         },
                         {
                             alignment: AlignmentType.HERO,
-                            stage: FinalBoss.BLACK_DOOM,
+                            boss: FinalBoss.BLACK_DOOM,
                             task: "Find Black Doom",
                         },
                     ],
@@ -2052,30 +2107,49 @@ export class YearOfShadowConfig implements IShadowConfig {
                 },
             ],
         },
-        title: {
-            x: 0.42, y: 0.042, type: GameText,
-            text: '', style: {
-                fontFamily: 'Verdana',
+        colorData: {
+            [AlignmentType.DARK]: { border: '#2b0c2a', fill: '#a61f1f' },
+            [AlignmentType.NEUTRAL]: { border: '#000000', fill: '#ffffff' },
+            [AlignmentType.HERO]: { border: '#00005f', fill: '#0c4993' },
+        },
+        routeNumber: {
+            x: 0.06, y: 0.037, type: GameText,
+            text: '000', style: {
+                fontFamily: 'Triforce',
                 fontStyle: 'bold',
-                fontSize: '32px',
-                stroke: '#000000',
-                strokeThickness: 5,
+                fontSize: '50px',
+                stroke: '#000',
+                strokeThickness: 10,
+                color: '#fe6e43',
+            },
+        },
+        title: {
+            x: 0.43, y: 0.038, type: GameText,
+            text: '', style: {
+                fontFamily: 'Triforce',
+                fontStyle: 'bold',
+                fontSize: '42px',
+                stroke: '#000',
+                strokeThickness: 8,
+                color: '#fe6e43',
             },
         },
         stage: {
-            x: 0.22, y: 0.958, type: GameText,
+            x: 0.22, y: 0.952, type: GameText,
             text: '', style: {
-                fontFamily: 'Verdana',
+                fontFamily: 'Triforce',
                 fontStyle: 'bold',
-                fontSize: '36px',
+                fontSize: '48px',
+                strokeThickness: 5,
             },
         },
         objective: {
-            x: 0.66, y: 0.958, type: GameText,
+            x: 0.66, y: 0.952, type: GameText,
             text: '', style: {
-                fontFamily: 'Verdana',
+                fontFamily: 'Triforce',
                 fontStyle: 'bold',
-                fontSize: '24px',
+                fontSize: '32px',
+                strokeThickness: 5,
             },
         },
         routeButton: {
@@ -2083,6 +2157,16 @@ export class YearOfShadowConfig implements IShadowConfig {
             x: 0.94, y: 0.042,
             width: 0.1, height: 0.072,
             color: 0xff7f00,
+            alpha: 0,
+        },
+        minimap: {
+            type: RouteMinimap,
+            x: 0.75, y: 0.002,
+            width: 0.25, height: 0.076,
+            color: 0xff7f00,
+            excluded: 0x310839,
+            complete: 0xfe6e43,
+            incomplete: 0xad69ff,
         },
         objectiveButton: {
             type: GameRectangle,
@@ -2094,13 +2178,125 @@ export class YearOfShadowConfig implements IShadowConfig {
             270,
             153,
             246,
-            // 106,
-            // 73,
-            // 197,
-            // 232,
-            // 306,
-            // 98,
+            106,
+            73,
+            197,
+            232,
+            306,
+            98,
+            309,
+            65,
+            13,
+            202,
+            314,
+            149,
+            129,
+            154,
+            138,
+            3,
+            296,
+            92,
+            299,
+            267,
+            236,
+            97,
+            324,
+            89,
+            5,
+            275,
+            234,
+            243,
+            76,
+            200,
+            130,
+            288,
+            143,
+            44,
+            174,
+            300,
+            278,
+            9,
+            148,
+            233,
+            176,
+            280,
         ],
+        startLevel: 176,
+    };
+    public fullBingo: BingoViewConfig = {
+        type: BingoView,
+        key: Views.BINGO,
+        bounds: { x: 0, y: 0.1, width: 0.75, height: 0.8 },
+        cellText: {
+            type: GameText,
+            x: 0.5, y: 0.5,
+            text: '',
+            style: {
+                fontFamily: 'Triforce',
+                fontSize: '16px',
+                fontStyle: 'bold',
+                stroke: '#000000',
+                strokeThickness: 3,
+                color: '#ffffff',
+            },
+        },
+    };
+    public bingoPreview: BingoViewConfig = {
+        type: BingoView,
+        key: Views.BINGO_PREVIEW,
+        cellText: {
+            type: GameText,
+            x: 0.5, y: 0.5,
+            text: '',
+            style: {
+                fontFamily: 'Triforce',
+                fontSize: '16px',
+                fontStyle: 'bold',
+                stroke: '#000000',
+                strokeThickness: 3,
+                color: '#ffffff',
+            },
+        },
     };
 
+    public fullList: ListViewConfig = {
+        type: ListView,
+        key: Views.SUMMARY_LIST,
+        bounds: { x: 0.75, y: 0.68, width: 0.25, height: 0.32 },
+        text: {
+            type: GameText,
+            x: 0.02, y: 0.5,
+            origin: { x: 0, y: 0.5 },
+            text: '',
+            style: {
+                fontFamily: 'Triforce',
+                fontSize: '22px',
+                stroke: '#000000',
+                strokeThickness: 3,
+                color: '#ffffff',
+            },
+        },
+        elementsPerPage: 8,
+        lineSpacing: 1.2,
+    };
+    public nextSelection: ListViewConfig = {
+        type: ListView,
+        key: Views.WEEKLY_LIST,
+        bounds: { x: 0, y: 0, width: 0.75, height: 1 },
+        text: {
+            type: GameText,
+            x: 0.05, y: 0.5,
+            origin: { x: 0, y: 0.5 },
+            text: '',
+            style: {
+                fontFamily: 'Triforce',
+                fontSize: '60px',
+                stroke: '#000000',
+                strokeThickness: 12,
+                color: '#ffffff',
+            },
+        },
+        elementsPerPage: 7,
+        lineSpacing: 8,
+    };
 }

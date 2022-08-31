@@ -5,12 +5,12 @@ export class GameContainer extends Phaser.GameObjects.Container {
     protected containerDimensions: Rect2D;
 
     public get dimensions(): Rect2D {
+        if (!GameContainer.fullDimensions) {
+            GameContainer.fullDimensions = { x: 0, y: 0, width: this.scene.game.config.width as number, height: this.scene.game.config.height as number };
+        }
         if (this.containerDimensions) {
             return this.containerDimensions;
         } else {
-            if (!GameContainer.fullDimensions) {
-                GameContainer.fullDimensions = { x: 0, y: 0, width: this.scene.game.config.width as number, height: this.scene.game.config.height as number };
-            }
             return GameContainer.fullDimensions;
         }
     }

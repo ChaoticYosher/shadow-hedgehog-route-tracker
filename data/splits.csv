@@ -5,7 +5,7 @@ Run,Route,Stage Name,Stage ID,Alignment,Time
 1,270,Mad Matrix,,Dark,00:32:00
 1,270,Iron Jungle,,Neutral,00:12:07
 1,270,Lava Shelter,,Hero,00:07:43
-1,270,Egg Dealer,,,00:07:01
+1,270,Egg Dealer,,Hero,00:07:01
 1,270,Black Bull,,Dark,00:03:57
 1,270,Egg Breaker,,Dark,00:05:22
 1,270,Egg Breaker,,Neutral,00:32:50
@@ -15,20 +15,411 @@ Run,Route,Stage Name,Stage ID,Alignment,Time
 2,153,The Doom,,Hero,01:37:50
 2,153,Iron Jungle,,Hero,02:20:10
 2,153,Cosmic Fall,,Dark,00:36:29
-2,153,Egg Dealer,,,00:03:27
+2,153,Egg Dealer,,Dark,00:03:27
 2,153,Heavy Dog,,Hero,00:08:30
-3,246,Westopolis,,Hero,
-3,246,Lethal Highway,,Dark,
-3,246,Prison Island,,Dark,
-3,246,The Doom,,Hero,
-3,246,Heavy Dog,,Hero,
-3,246,Iron Jungle,,Neutral,
-3,246,Egg Breaker,,Neutral,
-3,246,Lava Shelter,,Hero,
-3,246,Egg Dealer,,Hero,
-4,106,Westopolis,,,
-5,73,Westopolis,,,
-6,197,Westopolis,,,
-7,232,Westopolis,,,
-8,306,Westopolis,,,
-9,98,Westopolis,,,
+2,153,Egg Breaker,,Hero, 00:08:31
+3,246,Westopolis,,Hero,00:08:09
+3,246,Lethal Highway,,Dark,00:03:39
+3,246,Prison Island,,Dark,00:07:58
+3,246,The Doom,,Hero,00:15:40
+3,246,Heavy Dog,,Hero,00:03:42
+3,246,Iron Jungle,,Neutral,00:07:50
+3,246,Egg Breaker,,Neutral,00:08:28
+3,246,Lava Shelter,,Hero,00:04:42
+3,246,Egg Dealer,,Hero,00:02:39
+4,106,Westopolis,,Neutral,00:03:02
+4,106,Glyphic Canyon,,Dark,00:07:02
+4,106,Cryptic Castle,,Neutral,00:08:16
+4,106,Egg Breaker,,Neutral,00:01:31
+4,106,The Doom,,Dark,00:11:33
+4,106,Heavy Dog,,Dark,00:02:12
+4,106,The Ark,,Dark,00:06:57
+4,106,Blue Falcon,,Dark,00:02:04
+4,106,GUN Fortress,,Hero,00:09:23
+4,106,Black Doom,,Hero,00:03:01
+5,73,Westopolis,,Dark,00:05:18
+5,73,Digital Circuit,,Hero,00:07:56
+5,73,Prison Island,,Neutral,00:08:19
+5,73,Sky Troops,,Hero,00:10:53
+5,73,Space Gadget,,Dark,00:13:12
+5,73,Lava Shelter,,Dark,00:22:58
+5,73,Egg Dealer,,Dark,00:03:01
+6,197,Westopolis,,Neutral,00:03:28
+6,197,Glyphic Canyon,,Hero,00:10:19
+6,197,Circus Park,,Neutral,00:10:23
+6,197,Sky Troops,,Neutral,00:05:34
+6,197,Iron Jungle,,Neutral,00:04:30
+6,197,Egg Breaker,,Neutral,00:02:58
+6,197,Lava Shelter,,Dark,00:11:00
+6,197,Egg Dealer,,Dark,00:03:04
+7,232,Westopolis,,Neutral,00:03:26
+7,232,Glyphic Canyon,,Hero,00:09:16
+7,232,Circus Park,,Hero,00:16:52
+7,232,Death Ruins,,Hero,00:06:34
+7,232,Black Bull,,Hero,00:05:01
+7,232,Lost Impact,,Hero,00:44:53
+7,232,Final Haunt,,Hero,00:17:23
+7,232,Black Doom,,Hero,00:02:43
+8,306,Westopolis,,Hero,00:07:38
+8,306,Lethal Highway,,Hero,00:05:41
+8,306,Black Bull,,Hero,00:02:00
+8,306,Circus Park,,Neutral,00:05:02
+8,306,Mad Matrix,,Dark,00:19:47
+8,306,Egg Breaker,,Dark,00:03:46
+8,306,Iron Jungle,,Hero,00:24:28
+8,306,Egg Breaker,,Hero,00:02:41
+8,306,Cosmic Fall,,Hero,00:13:23
+8,306,Black Doom,,Hero,00:03:25
+9,98,Westopolis,,Neutral,00:03:31
+9,98,Glyphic Canyon,,Dark,00:05:41
+9,98,Cryptic Castle,,Dark,00:21:47
+9,98,Egg Breaker,,Dark,00:01:35
+9,98,Central City,,Dark,00:05:56
+9,98,The Ark,,Neutral,00:03:04
+9,98,Blue Falcon,,Neutral,00:02:40
+9,98,Black Comet,,Hero,00:44:03
+9,98,Egg Dealer,,Hero,00:03:03
+10,309,Westopolis,,Hero,00:07:16
+10,309,Lethal Highway,,Hero,00:03:35
+10,309,Black Bull,,Hero,00:01:43
+10,309,Circus Park,,Neutral,00:05:17
+10,309,Mad Matrix,,Neutral,00:06:37
+10,309,Egg Breaker,,Neutral,00:01:54
+10,309,Space Gadget,,Neutral,00:05:50
+10,309,Cosmic Fall,,Dark,00:07:48
+10,309,Egg Dealer,,Dark,00:03:02
+11,65,Westopolis,,Dark,00:06:01
+11,65,Digital Circuit,,Hero,00:13:21
+11,65,Prison Island,,Neutral,00:04:42
+11,65,Sky Troops,,Dark,00:11:14
+11,65,Air Fleet,,Hero,00:09:58
+11,65,Lava Shelter,,Dark,00:10:07
+11,65,Egg Dealer,,Dark,00:02:29
+12,13,Westopolis,,Dark,00:05:17
+12,13,Digital Circuit,,Dark,00:14:17
+12,13,Cryptic Castle,,Neutral,00:06:16
+12,13,Egg Breaker,,Neutral,00:01:11
+12,13,The Doom,,Dark,00:18:40
+12,13,Heavy Dog,,Dark,00:02:47
+12,13,The Ark,,Neutral,00:03:25
+12,13,Blue Falcon,,Neutral,00:02:24
+12,13,Black Comet,,Dark,00:12:37
+12,13,Sonic And Diablo,,Dark,00:09:00
+13,202,Westopolis,,Neutral,00:02:52
+13,202,Glyphic Canyon,,Hero,00:12:03
+13,202,Circus Park,,Dark,00:05:16
+13,202,Sky Troops,,Hero,00:07:18
+13,202,Space Gadget,,Dark,00:21:18
+13,202,Lava Shelter,,Hero,00:07:30
+13,202,Egg Dealer,,Hero,00:02:43
+14,314,Westopolis,,Hero,00:05:03
+14,314,Lethal Highway,,Hero,00:04:29
+14,314,Black Bull,,Hero,00:02:29
+14,314,Circus Park,,Neutral,00:05:55
+14,314,Mad Matrix,,Hero,00:14:57
+14,314,Egg Breaker,,Hero,00:02:23
+14,314,Lost Impact,,Neutral,00:04:54
+14,314,Cosmic Fall,,Hero,00:10:52
+14,314,Black Doom,,Hero,00:04:41
+15,149,Westopolis,,Neutral,00:03:10
+15,149,Glyphic Canyon,,Neutral,00:05:19
+15,149,Prison Island,,Dark,00:06:43
+15,149,The Doom,,Hero,00:10:54
+15,149,Heavy Dog,,Hero,00:02:44
+15,149,Iron Jungle,,Dark,00:10:04
+15,149,Egg Breaker,,Dark,00:02:46
+15,149,Black Comet,,Dark,00:18:24
+15,149,Sonic And Diablo,,Dark,00:04:30
+16,129,Westopolis,,Neutral,00:03:15
+16,129,Glyphic Canyon,,Dark,00:08:33
+16,129,Cryptic Castle,,Hero,00:37:41
+16,129,Egg Breaker,,Hero,00:01:25
+16,129,Sky Troops,,Neutral,00:08:54
+16,129,Iron Jungle,,Neutral,00:04:59
+16,129,Egg Breaker,,Neutral,00:01:22
+16,129,Lava Shelter,,Dark,00:05:37
+16,129,Egg Dealer,,Dark,09:02:50
+17,154,Westopolis,,Neutral,00:02:51
+17,154,Glyphic Canyon,,Neutral,00:24:22
+17,154,Prison Island,,Dark,00:18:01
+17,154,The Doom,,Hero,00:07:00
+17,154,Heavy Dog,,Hero,00:02:09
+17,154,Iron Jungle,,Hero,00:09:52
+17,154,Egg Breaker,,Hero,00:01:29
+17,154,Cosmic Fall,,Hero,00:35:21
+17,154,Black Doom,,Hero,00:02:42
+18,138,Westopolis,,Neutral,00:02:56
+18,138,Glyphic Canyon,,Dark,00:05:18
+18,138,Cryptic Castle,,Hero,00:06:07
+18,138,Egg Breaker,,Hero,00:01:25
+18,138,Sky Troops,,Hero,00:10:29
+18,138,Space Gadget,,Hero,00:05:41
+18,138,Final Haunt,,Hero,00:12:47
+18,138,Black Doom,,Hero,00:03:42
+19,3,Westopolis,,Dark,00:05:44
+19,3,Digital Circuit,,Dark,00:18:34
+19,3,Cryptic Castle,,Dark,00:08:01
+19,3,Egg Breaker,,Dark,00:01:30
+19,3,Central City,,Dark,00:05:05
+19,3,The Ark,,Neutral,00:03:14
+19,3,Blue Falcon,,Neutral,00:01:47
+19,3,Black Comet,,Dark,00:11:52
+19,3,Sonic And Diablo,,Dark,00:06:02
+20,296,Westopolis,,Hero,00:05:12
+20,296,Lethal Highway,,Hero,00:03:14
+20,296,Black Bull,,Hero,00:03:08
+20,296,Circus Park,,Dark,00:07:04
+20,296,Sky Troops,,Hero,00:06:18
+20,296,Space Gadget,,Dark,00:09:50
+20,296,Lava Shelter,,Hero,00:05:12
+20,296,Egg Dealer,,Hero,00:03:20
+21,92,Westopolis,,Dark,00:04:23
+21,92,Digital Circuit,,Hero,00:15:08
+21,92,Prison Island,,Hero,00:09:59
+21,92,Mad Matrix,,Hero,00:15:53
+21,92,Egg Breaker,,Hero,00:02:23
+21,92,Lost Impact,,Neutral,00:06:13
+21,92,Cosmic Fall,,Hero,00:18:57
+21,92,Black Doom,,Hero,00:03:07
+22,299,Westopolis,,Hero,00:06:25
+22,299,Lethal Highway,,Hero,00:03:23
+22,299,Black Bull,,Hero,00:01:53
+22,299,Circus Park,,Dark,00:05:52
+22,299,Sky Troops,,Hero,00:05:32
+22,299,Space Gadget,,Hero,00:04:43
+22,299,Final Haunt,,Dark,00:16:02
+22,299,Sonic And Diablo,,Dark,00:03:09
+23,267,Westopolis,,Hero,00:05:21
+23,267,Lethal Highway,,Dark,00:05:49
+23,267,Black Bull,,Dark,00:03:40
+23,267,Prison Island,,Hero,00:05:42
+23,267,Mad Matrix,,Dark,00:19:27
+23,267,Egg Breaker,,Dark,00:02:48
+23,267,Iron Jungle,,Dark,00:05:09
+23,267,Egg Breaker,,Dark,00:01:37
+23,267,Black Comet,,Dark,00:10:12
+23,267,Sonic And Diablo,,Dark,00:04:18
+24,236,Westopolis,,Hero,00:06:52
+24,236,Lethal Highway,,Dark,00:05:04
+24,236,Black Bull,,Dark,00:02:07
+24,236,Prison Island,,Dark,00:05:34
+24,236,The Doom,,Dark,00:19:05
+24,236,Heavy Dog,,Dark,00:02:06
+24,236,The Ark,,Neutral,00:04:43
+24,236,Blue Falcon,,Neutral,00:02:56
+24,236,Black Comet,,Hero,00:08:52
+24,236,Egg Dealer,,Hero,00:03:00
+25,97,Westopolis,,Neutral,00:02:58
+25,97,Glyphic Canyon,,Dark,00:05:28
+25,97,Cryptic Castle,,Dark,00:07:33
+25,97,Egg Breaker,,Dark,00:01:43
+25,97,Central City,,Dark,00:05:55
+25,97,The Ark,,Neutral,00:03:18
+25,97,Blue Falcon,,Neutral,00:02:05
+25,97,Black Comet,,Dark,00:13:50
+25,97,Sonic And Diablo,,Dark,00:03:03
+26,324,Westopolis,,Hero,00:05:54
+26,324,Lethal Highway,,Hero,00:04:10
+26,324,Black Bull,,Hero,02:02:22
+26,324,Circus Park,,Hero,00:05:10
+26,324,Death Ruins,,Hero,00:12:17
+26,324,Black Bull,,Hero,00:05:04
+26,324,Lost Impact,,Neutral,00:04:01
+26,324,Cosmic Fall,,Hero,00:11:22
+26,324,Black Doom,,Hero,00:04:31
+27,89,Westopolis,,Dark,00:05:51
+27,89,Digital Circuit,,Hero,00:05:33
+27,89,Prison Island,,Hero,00:06:46
+27,89,Mad Matrix,,Neutral,00:04:34
+27,89,Egg Breaker,,Neutral,00:02:37
+27,89,Space Gadget,,Hero,00:04:19
+27,89,Final Haunt,,Dark,00:08:01
+27,89,Sonic And Diablo,,Dark,00:02:43
+28,5,Westopolis,,Dark,00:04:21
+28,5,Digital Circuit,,Dark,00:09:41
+28,5,Cryptic Castle,,Dark,00:08:09
+28,5,Egg Breaker,,Dark,00:01:19
+28,5,Central City,,Neutral,00:34:35
+28,5,Air Fleet,,Dark,00:48:38
+28,5,GUN Fortress,,Dark,00:11:12
+28,5,Sonic And Diablo,,Dark,00:06:33
+29,275,Westopolis,,Hero,00:04:34
+29,275,Lethal Highway,,Dark,00:06:25
+29,275,Black Bull,,Dark,00:03:19
+29,275,Prison Island,,Hero,00:08:40
+29,275,Mad Matrix,,Neutral,00:05:10
+29,275,Egg Breaker,,Neutral,00:02:08
+29,275,Space Gadget,,Neutral,00:08:16
+29,275,Cosmic Fall,,Dark,00:10:28
+29,275,Egg Dealer,,Dark,00:02:41
+30,234,Westopolis,,Hero,00:04:39
+30,234,Lethal Highway,,Dark,00:05:14
+30,234,Black Bull,,Dark,00:02:47
+30,234,Prison Island,,Dark,00:05:38
+30,234,The Doom,,Dark,00:16:56
+30,234,Heavy Dog,,Dark,00:03:08
+30,234,The Ark,,Dark,00:30:12
+30,234,Blue Falcon,,Dark,00:03:01
+30,234,GUN Fortress,,Hero,00:11:11
+30,234,Black Doom,,Hero,00:04:33
+31,243,Westopolis,,Hero,00:06:49
+31,243,Lethal Highway,,Dark,00:04:12
+31,243,Black Bull,,Dark,00:02:51
+31,243,Prison Island,,Dark,00:05:30
+31,243,The Doom,,Hero,00:09:25
+31,243,Heavy Dog,,Hero,00:02:08
+31,243,Iron Jungle,,Dark,00:08:10
+31,243,Egg Breaker,,Dark,00:00:56
+31,243,Black Comet,,Dark,00:15:10
+31,243,Sonic And Diablo,,Dark,00:04:23
+32,76,Westopolis,,Dark,00:04:24
+32,76,Digital Circuit,,Hero,00:05:27
+32,76,Prison Island,,Neutral,00:04:12
+32,76,Sky Troops,,Hero,00:05:21
+32,76,Space Gadget,,Neutral,00:05:25
+32,76,Cosmic Fall,,Hero,00:12:45
+32,76,Black Doom,,Hero,00:02:59
+33,200,Westopolis,,Neutral,00:02:53
+33,200,Glyphic Canyon,,Hero,00:06:32
+33,200,Circus Park,,Dark,00:04:40
+33,200,Sky Troops,,Neutral,00:06:34
+33,200,Iron Jungle,,Hero,00:11:39
+33,200,Egg Breaker,,Hero,00:00:54
+33,200,Cosmic Fall,,Hero,00:12:01
+33,200,Black Doom,,Hero,00:03:56
+34,130,Westopolis,,Neutral,00:02:51
+34,130,Glyphic Canyon,,Dark,00:05:52
+34,130,Cryptic Castle,,Hero,00:04:54
+34,130,Egg Breaker,,Hero,00:00:58
+34,130,Sky Troops,,Neutral,00:04:44
+34,130,Iron Jungle,,Neutral,00:05:10
+34,130,Egg Breaker,,Neutral,00:00:41
+34,130,Lava Shelter,,Hero,00:05:24
+34,130,Egg Dealer,,Hero,00:02:43
+35,288,Westopolis,,Hero,00:06:47
+35,288,Lethal Highway,,Hero,00:03:32
+35,288,Black Bull,,Hero,00:02:50
+35,288,Circus Park,,Dark,00:04:10
+35,288,Sky Troops,,Dark,00:10:57
+35,288,Air Fleet,,Hero,00:06:17
+35,288,Lava Shelter,,Hero,00:05:16
+35,288,Egg Dealer,,Hero,00:02:47
+36,143,Westopolis,,Neutral,00:02:51
+36,143,Glyphic Canyon,,Neutral,00:06:02
+36,143,Prison Island,,Dark,00:05:15
+36,143,The Doom,,Neutral,00:04:20
+36,143,Heavy Dog,,Neutral,00:01:50
+36,143,Air Fleet,,Dark,00:08:29
+36,143,GUN Fortress,,Dark,00:07:52
+36,143,Sonic And Diablo,,Dark,00:02:45
+37,44,Westopolis,,Dark,00:04:27
+37,44,Digital Circuit,,Dark,00:07:58
+37,44,Cryptic Castle,,Hero,00:06:08
+37,44,Egg Breaker,,Hero,00:01:18
+37,44,Sky Troops,,Hero,00:05:57
+37,44,Space Gadget,,Hero,00:04:16
+37,44,Final Haunt,,Hero,00:10:59
+37,44,Black Doom,,Hero,00:02:20
+38,174,Westopolis,,Neutral,00:02:45
+38,174,Glyphic Canyon,,Neutral,00:04:02
+38,174,Prison Island,,Hero,00:05:59
+38,174,Mad Matrix,,Dark,00:23:06
+38,174,Egg Breaker,,Dark,00:01:59
+38,174,Iron Jungle,,Dark,00:04:45
+38,174,Egg Breaker,,Dark,00:00:43
+38,174,Black Comet,,Hero,00:11:56
+38,174,Egg Dealer,,Hero,00:03:09
+39,300,Westopolis,,Hero,00:05:46
+39,300,Lethal Highway,,Hero,00:03:34
+39,300,Black Bull,,Hero,00:01:44
+39,300,Circus Park,,Dark,00:05:53
+39,300,Sky Troops,,Hero,00:15:47
+39,300,Space Gadget,,Hero,00:03:55
+39,300,Final Haunt,,Hero,00:08:27
+39,300,Black Doom,,Hero,00:01:34
+40,278,Westopolis,,Hero,00:06:02
+40,278,Lethal Highway,,Dark,00:04:03
+40,278,Black Bull,,Dark,00:01:59
+40,278,Prison Island,,Hero,00:05:18
+40,278,Mad Matrix,,Neutral,00:04:09
+40,278,Egg Breaker,,Neutral,00:01:36
+40,278,Space Gadget,,Hero,00:06:01
+40,278,Final Haunt,,Hero,00:08:29
+40,278,Black Doom,,Hero,00:01:17
+41,9,Westopolis,,Dark,00:04:46
+41,9,Digital Circuit,,Dark,00:11:30
+41,9,Cryptic Castle,,Dark,00:08:16
+41,9,Egg Breaker,,Dark,00:01:39
+41,9,Central City,,Hero,00:08:28
+41,9,Air Fleet,,Hero,00:06:27
+41,9,Lava Shelter,,Dark,00:06:00
+41,9,Egg Dealer,,Dark,00:05:01
+42,148,Westopolis,,Neutral,00:03:45
+42,148,Glyphic Canyon,,Neutral,00:06:58
+42,148,Prison Island,,Dark,00:09:33
+42,148,The Doom,,Neutral,00:06:28
+42,148,Heavy Dog,,Neutral,00:01:34
+42,148,Air Fleet,,Hero,00:08:12
+42,148,Lava Shelter,,Hero,00:04:15
+42,148,Egg Dealer,,Hero,00:09:57
+43,233,Westopolis,,Hero,00:04:50
+43,233,Lethal Highway,,Dark,00:04:46
+43,233,Black Bull,,Dark,00:01:51
+43,233,Prison Island,,Dark,00:05:18
+43,233,The Doom,,Dark,00:12:14
+43,233,Heavy Dog,,Dark,
+43,233,The Ark,,Dark,00:09:20
+43,233,Blue Falcon,,Dark,
+43,233,GUN Fortress,,Dark,00:09:36
+43,233,Sonic And Diablo,,Dark,00:05:13
+44,176,Westopolis,,Neutral,00:04:21
+44,176,Glyphic Canyon,,Neutral,00:05:57
+44,176,Prison Island,,Hero,00:08:54
+44,176,Mad Matrix,,Dark,00:33:39
+44,176,Egg Breaker,,Dark,00:01:53
+44,176,Iron Jungle,,Neutral,00:03:52
+44,176,Egg Breaker,,Neutral,00:00:41
+44,176,Lava Shelter,,Hero,00:04:21
+44,176,Egg Dealer,,Hero,00:02:41
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+?,122,Westopolis,,Neutral,
+?,122,Glyphic Canyon,,Dark,
+?,122,Cryptic Castle,,Hero,
+?,122,Egg Breaker,,Hero,
+?,122,Sky Troops,,Dark,
+?,122,Air Fleet,,Dark,
+?,122,GUN Fortress,,Hero,
+?,122,Black Doom,,Hero,

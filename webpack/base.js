@@ -26,9 +26,14 @@ module.exports = {
             use: 'file-loader',
         },
         {
-            test: require.resolve('Phaser'),
-            loader: 'expose-loader',
-            options: { exposes: { globalName: 'Phaser', override: true, }, },
+            test: /\.(txt|lss)$/i,
+            include: path.resolve(localDirectory, 'data'),
+            use: 'file-loader',
+        },
+        {
+            test: /\.(csv)$/i,
+            include: path.resolve(localDirectory, 'data'),
+            use: 'csv-loader',
         },
         {
             test: require.resolve('Phaser'),
@@ -49,5 +54,5 @@ module.exports = {
     ],
     resolve: {
         extensions: ['.js', '.ts'],
-    }
+    },
 };

@@ -63,6 +63,8 @@ export interface LevelObjectiveData {
 
 export interface LevelStageData {
     stage: string;
+    sequence: number;
+    alignmentOffset: number;
     objectives: LevelObjectiveData[];
 }
 
@@ -73,14 +75,12 @@ export interface LevelData {
     // objective images
 }
 
-export enum Color {
-    Hero = '#0000ff',
-    Dark = '#ff0000',
-    Neutral = '#ffff00',
-}
-
 export interface StageInfoData {
-    color: Color;
+    color: string;
     stage: string;
     objective: string;
+}
+
+export interface CompletedRunsData {
+    routes: LevelRouteData[];
 }
