@@ -1,25 +1,8 @@
 import 'phaser';
+import { WebMidi } from 'webmidi';
 import { GameConfig } from "./core/GameConfig";
 import { GameController } from './core/GameController';
-import { WebMidi } from 'webmidi';
-let express = require('express');
-let dotenv = require('dotenv');
-import { Express, Request, Response } from 'express';
 
-dotenv.config();
-
-const app: Express = express();
-const port = process.env.PORT;
-
-app.get('/', (req: Request, res: Response) => {
-    res.send("Well done!");
-});
-
-app.listen(port, () => {
-    console.log(`[server]: Server is running at https://localhost: ${port}`);
-});
-
-console.log("hi you're d");
 function onEnabled(game: GameController): void {
     const launchpadIn = WebMidi.getInputByName('Launchpad MK2 2');
     const launchpadOut = WebMidi.getOutputByName('Launchpad MK2 2');

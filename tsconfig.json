@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
+    "incremental": true,
     "target": "ES6",
-    "module": "CommonJS",
+    "module": "commonjs",
     "moduleResolution": "node",
-    "noImplicitAny": true
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
   },
   "include": [
     "src/**/*",

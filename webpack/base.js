@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-
+const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 const localDirectory = path.resolve(__dirname, '..');
 
 module.exports = {
@@ -43,6 +43,7 @@ module.exports = {
         ],
     },
     plugins: [
+        new NodePolyfillPlugin(),
         new CleanWebpackPlugin({
             root: path.resolve(__dirname, 'dist'),
         }),
