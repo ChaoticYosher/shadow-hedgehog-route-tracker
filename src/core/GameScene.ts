@@ -15,9 +15,7 @@ export class GameScene extends Phaser.Scene {
         }
     }
 
-    protected startGame(): void {
-
-    }
+    protected startGame(): void {}
 
     public create(): void {
         this.views = {};

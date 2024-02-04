@@ -3,16 +3,16 @@ import { MainScene } from "./MainScene";
 export const GameConfig: Phaser.Types.Core.GameConfig = {
     width: 1280,
     height: 720,
-    parent: 'tracker',
+    parent: "tracker",
     zoom: 1,
     type: Phaser.AUTO,
     physics: {
-        default: 'arcade',
+        default: "arcade",
         arcade: {
-            gravity: { y: 0, },
+            gravity: { y: 0 },
             debug: true,
         },
     },
     transparent: true,
-    scene: [MainScene]
-}
+    scene: [MainScene],
+};

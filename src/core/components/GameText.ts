@@ -6,7 +6,7 @@ export class GameText extends Phaser.GameObjects.Text {
         if (config.origin) {
             this.setOrigin(config.origin.x, config.origin.y);
         } else {
-            this.setOrigin(0.5, 0.5)
+            this.setOrigin(0.5, 0.5);
         }
     }
 }

@@ -9,7 +9,7 @@ export interface Rect2D extends Point2D {
 }
 
 export interface GameAssetData {
-    paths: string[],
+    paths: string[];
     customPivot?: Point2D;
 }
 

@@ -3,8 +3,8 @@ import { ListViewConfig } from "../components/list/ListViewConfig";
 import { RouteConfig } from "../components/route/RouteConfig";
 
 export class ShadowEvents {
-    public static readonly SHOW_COMPLETE_RUNS: string = 'eventShowCompleteRuns';
-    public static readonly GENERATE_RUN_WEEK: string = 'eventGenerateRunWeek';
+    public static readonly SHOW_COMPLETE_RUNS: string = "eventShowCompleteRuns";
+    public static readonly GENERATE_RUN_WEEK: string = "eventGenerateRunWeek";
 }
 
 export interface IShadowConfig {

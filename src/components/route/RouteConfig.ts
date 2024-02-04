@@ -18,5 +18,5 @@ export interface RouteConfig extends ViewConfig {
     routeButton: RectangleConfig;
     minimap: MinimapConfig;
     objectiveButton: RectangleConfig;
-    colorData: { [key: string]: { border: string, fill: string } };
+    colorData: { [key: string]: { border: string; fill: string } };
 }

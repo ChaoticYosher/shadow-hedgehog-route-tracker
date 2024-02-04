@@ -15,10 +15,19 @@ export class MainScene extends GameScene {
     protected weeklyRouteList: ListView;
 
     protected startGame(): void {
-        this.config = new YearOfShadowConfig;
+        this.config = new YearOfShadowConfig();
+        console.log(JSON.stringify(this.config.route.levelData, null, 2));
         this.route = this.createView(this.config.route);
-        this.route.on(ShadowEvents.SHOW_COMPLETE_RUNS, this.onShowCompleteRun, this);
-        this.route.on(ShadowEvents.GENERATE_RUN_WEEK, this.onNewWeekGenerated, this);
+        this.route.on(
+            ShadowEvents.SHOW_COMPLETE_RUNS,
+            this.onShowCompleteRun,
+            this
+        );
+        this.route.on(
+            ShadowEvents.GENERATE_RUN_WEEK,
+            this.onNewWeekGenerated,
+            this
+        );
         this.bingo = this.createView(this.config.fullBingo);
         this.bingoPreview = this.createView(this.config.bingoPreview);
         this.routeList = this.createView(this.config.fullList);
@@ -35,10 +44,14 @@ export class MainScene extends GameScene {
     }
 
     protected onShowCompleteRun(data: CompletedRunsData): void {
-        this.routeList.updateList(data.routes.map(route => `${route.route}:\t${route.name}`));
+        this.routeList.updateList(
+            data.routes.map((route) => `${route.route}:\t${route.name}`)
+        );
     }
 
     protected onNewWeekGenerated(data: CompletedRunsData): void {
-        this.weeklyRouteList.updateList(data.routes.map(route => `${route.route}:\t${route.name}`));
+        this.weeklyRouteList.updateList(
+            data.routes.map((route) => `${route.route}:\t${route.name}`)
+        );
     }
 }

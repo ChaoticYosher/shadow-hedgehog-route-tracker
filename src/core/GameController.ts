@@ -10,4 +10,3 @@ export class GameController extends Phaser.Game {
         (this.scene.scenes[0] as any).nextObjective();
     }
 }
-

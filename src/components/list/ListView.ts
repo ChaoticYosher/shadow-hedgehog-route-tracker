@@ -21,13 +21,22 @@ export class ListView extends GameView {
     }
 
     public allowClickPaging(): void {
-        this.clickArea = this.create<GameRectangle>({
-            type: GameRectangle,
-            x: 0.5, y: 0.5,
-            width: 1, height: 1,
-            alpha: 0,
-        } as RectangleConfig, this);
-        this.addInteraction(this.clickArea, GameEvent.POINTER_UP, this.nextPage);
+        this.clickArea = this.create<GameRectangle>(
+            {
+                type: GameRectangle,
+                x: 0.5,
+                y: 0.5,
+                width: 1,
+                height: 1,
+                alpha: 0,
+            } as RectangleConfig,
+            this
+        );
+        this.addInteraction(
+            this.clickArea,
+            GameEvent.POINTER_UP,
+            this.nextPage
+        );
     }
 
     public updateList(list: string[]): void {
@@ -37,7 +46,11 @@ export class ListView extends GameView {
     }
 
     protected showList(): void {
-        this.text.setText(this.listItems.slice(this.offset, this.offset + this.config.elementsPerPage).join('\n'));
+        this.text.setText(
+            this.listItems
+                .slice(this.offset, this.offset + this.config.elementsPerPage)
+                .join("\n")
+        );
     }
 
     protected nextPage(): void {

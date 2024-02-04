@@ -1,18 +1,13 @@
 {
-  "compilerOptions": {
-    "incremental": true,
-    "target": "ES6",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "noImplicitAny": true,
-    "forceConsistentCasingInFileNames": true,
-  },
-  "include": [
-    "src/**/*",
-    "node_modules/@types/node/"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "compilerOptions": {
+        "incremental": true,
+        "target": "ES6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": ["src/**/*", "node_modules/@types/node/"],
+    "exclude": ["node_modules"]
 }
